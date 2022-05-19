@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou simplesmente diminua e aumente o tamanho da pagina no seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/arquivo01.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/arquivo02.png" type="image/png">
+        <!-- o tamanho do arquivo03 é 1000x1000 porem se colocarmos o max-width como 1000px havera uma "folgadinha", possibilitando a criação de uma rolagem lateral o que normalmente não é atrativo aos usuarios ao usarem um site, em contra partida a isso acrescentamos mais 50px -->
+        <img src="imagens/arquivo03.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Rex Orange County - AMAZING (Official Video).mp3" type="audio/mpeg">
+        <source src="midia/Rex Orange County - AMAZING (Official Video).ogg" type="audio/ogg">
+        <source src="midia/Rex Orange County - AMAZING (Official Video).wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio, <a href="midia/Rex Orange County - AMAZING (Official Video).mp3" download="Rex Orange County - Amazing">Clique aqui para baixar</a></p>
+    </audio>
+    <!-- <audio src="midia/Rex Orange County - AMAZING (Official Video).mp3" controls></audio> -->
+    <!-- mpeg wav ogg -->
+</body>
+</html>
