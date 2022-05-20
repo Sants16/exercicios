@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D009</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #333;
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        /* #container{ tentei deixar as imagens de links como estão agora mas usando, flexbox e grid layout, não conseguii :(, por algum motivo as tags a criaram uns espaços vazios dos lados das imagens, ai seria como se tivesse algo la mas não tem e acabou não deixando eu juntar as imagens
+            display: grid;
+            grid-template-areas: 
+            "img-1 img-2"
+            "img-3 img-4"
+            ;
+            gap: 0px;
+        }
+
+        .img-1{
+            grid-area: img-1;
+        }
+
+        .img-2{
+            grid-area: img-2;
+        }
+        .img-3{
+            grid-area: img-3;
+        }
+        .img-4{
+            grid-area: img-4;
+        } */
+        
+    </style>
+</head>
+<body>
+    <h1>Vídeos legais para assistir</h1>
+
+    <div id="container">
+        <a href="video-html.html" rel="next" target="_self"><img id="img-1" src="imagens/thumb-html.png" alt="Curso de HTML"></a>
+        <a href="video-js.html" rel="next" target="_self"><img id="img-2" src="imagens/thumb-js.png" alt="Curso de JavaScript"></a>
+        <a href="video-hardware.html" rel="next" target="_self"><img id="img-3" src="imagens/thumb-hardware.png" alt="Curso de Hardware"></a>
+        <a href="video-python.html" rel="next" target="_self"><img id="img-4" src="imagens/thumb-python.png" alt="Curso de Python"></a>
+    </div>
+
+</body>
+</html>
