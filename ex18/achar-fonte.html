@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte Externa</title>
+    <style>
+        @font-face { /*fonte baixada do dafont.com*/
+            font-family: 'Morefren';
+            src: url('Morefren.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+            opentype(otf)
+            truetype(ttf)
+            */
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font: 400 2em 'Inconsolata', monospace;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Morefren', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            margin: 10px 0;
+        }
+        p{
+            margin: 0 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>ipsum</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quibusdam illo magni maiores cupiditate ab inventore. At aut perferendis ut ipsum pariatur, veniam error, ducimus consequatur architecto rem nemo esse.</p>
+</body>
+</html>
